@@ -1,49 +1,104 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title> 🌴CI/CD in Android - DroidCon</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/night.css">
+
+	<link rel="stylesheet" href="css/override.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section>
+				<h2>Android CI/CD At Twiga</h2>
+				<img class="stretch" src="./undraw_on_the_office_fbfs.svg" />
+				<div>Mark Gachoka - Software Engineer (Android)</div>
+			</section>
+			<section>
+				<h3>Continous integration? 🤗</h3>
+				<p class="fragment fade-up">
+						Continuous Integration (CI) is a <span class="fragment highlight-green">development practice</span> that requires developers to integrate code into a shared
+						repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect
+						problems early.
+					</p>
+				<ul>
+					<li class="fragment fade-up">Development practice</li>
+					<li class="fragment fade-up">Shared repository</li>
+					<li class="fragment fade-up">Several times a day</li>
+				</ul>
+				<aside class="notes">
+					<p class="fragment fade-up">
+						Continuous Integration (CI) is a development practice that requires developers to integrate code into a
+						shared
+						repository several times a day. Each check-in is then verified by an automated build, allowing teams to
+						detect
+						problems early.
+					</p>
+				</aside>
+			</section>
+			<section>
+				<pre><code class="hljs" data-line-numbers="2">
+internal data class MyDataClass(
+ private val variable1: String,
+ private val variable2:Int)
+
+				</code></pre>
+			</section>
+			<section>
+				<h2>This video will use up the remaining space on the slide</h2>
+				<video data-autoplay class="stretch" src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+				<aside class="notes">
+					<ul>
+						<li>Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open
+							the
+							speaker notes window (hit »S« on your keyboard).</li>
+						<li>Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open
+							the
+							speaker notes window (hit »S« on your keyboard).</li>
+					</ul>
+				</aside>
+			</section>
 		</div>
+	</div>
 
-		<script src="js/reveal.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+	</script>
+</body>
+
 </html>
